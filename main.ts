@@ -1,6 +1,6 @@
 while (true) {
-    if (input.acceleration(Dimension.X) > 10) {
-        light.setAll(light.rgb(0, 255, 255))
+    if (input.acceleration(Dimension.Z) > 10 || input.acceleration(Dimension.Z) < 10) {
+        music.siren.playUntilDone()
     }
     
 }
